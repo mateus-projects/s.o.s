@@ -1,0 +1,68 @@
+@media (max-width: 767px) {
+  .banner {
+    margin: 0;
+    padding-top: 0;
+  }
+  .logo-adress {
+    height: 250;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .navigation-padrao {
+    height: 25px;
+    background-color: #d6a8db8f;
+  }
+  .nav-content {
+    display: none;
+  }
+  .nav-content a {
+    display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  #address li {
+    font-size: 0.7rem;
+  }
+  .button-contact{
+    display: none;
+  }
+  #logo {
+    margin: auto;
+    max-width: 145px;
+  }
+  .sobre {
+    padding: 0 15px;
+  }
+  .negocio-img-p {
+    flex-direction: column;
+  }
+  .container-img-p {
+    margin-bottom: 20px;
+  }
+  .texto-sobre h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer {
+    margin: 0 18px;
+    margin-bottom: 4rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 364px) {
+  .logo-adress {
+    height: 269;
+  }
+  .sobre {
+    line-height: 17px;
+  }
+}
+@media (max-width: 254px) {
+  .logo-adress {
+    height: 298;
+  }
+  #sobre-top h1 {
+    line-height: 40px;
+  }
+}

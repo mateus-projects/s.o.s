@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.button-dark{
+  border-radius: 40px;
+	font-size: 0.8rem;
+	height: 40px;
+	width: 100px;
+	border: none;
+	background-color: #4e545c;
+	color: #e5e8e8;
+	transition: all 0.5s linear;
+}
+.button-contact{
+  position: absolute;
+  right: 0;
+  font-size: 0.7rem;
+	height: 30px;
+	width: 70px;
+}
+body {
+  background-color: #f88ed03d;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Lobster Two", cursive;
+}
+.banner {
+  padding:40px 15px;
+  overflow: hidden;
+  margin: 0 55px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+/* =============== logo-adress ================ */
+
+.logo-adress {
+  display: flex;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 169;
+  padding: 0 20px;
+  background-color: #292929a2;
+  font-size: 14px;
+  font-family: sans-serif;
+  align-items: center;
+}
+#logo {
+  margin-right: auto;
+  max-width: 170px;
+}
+#logo img {
+  width: 100%;
+  border-radius: 50%;
+}
+#address,
+#icons {
+  list-style-type: none;
+  text-align: end;
+}
+#contatos{
+  position: relative;
+}
+#address li {
+  margin-bottom: 4px;
+  color: #fff;
+}
+#contato {
+  font-weight: bold;
+}
+.adress-rua{
+  text-decoration: none;
+  color: #fff;
+}
+#icons {
+  display: flex;
+  justify-content: end;
+}
+#icons li {
+  font-size: 1.6rem;
+}
+#icons li a {
+  color: #fff;
+}
+#icons li a:hover {
+  color: #d6a8db;
+}
+#icons li:not(:last-child) {
+  margin-right: 20px;
+}
+/* =============== fim logo-adress ================ */
+/* ========== navigation ============*/
+.navigation-padrao {
+  height: 50px;
+  width: 100%;
+}
+.nav-content {
+  background-color: #d6a8db8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 50px;
+}
+.nav-content a:not(:last-child) {
+  margin-right: 8vw;
+}
+.nav-content a {
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.4s;
+  font-weight: bolder;
+}
+.nav-content a:hover {
+  color: #5e5d58;
+  box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.9);
+}
+.nav-button {
+  display: none;
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #ff000000;
+}
+.nav-button i {
+  color: #d6a8db;
+}
+.overlay {
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  color: #e697faf6;
+  display: block;
+  font-size: 32px;
+  transition: 0.3s;
+}
+.overlay a:hover,
+.overlay a:focus {
+  transform: scale(1.1);
+  color: #f1f1f1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: -1.4rem;
+  right: 0.8rem;
+  font-size: 50px;
+}
+/* ========== fim navigation ============*/
+/* ========== SLIDES =================== */
+
+.item{
+  max-height: 400px;
+  overflow: hidden;
+}
+.bannerCar{
+  overflow: hidden;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.bannerCar .owl-dots{
+  display: none;
+}
+
+/* ========== FIM SLIDES =============== */
+/* ========== SOBRE ==================== */
+.sobre {
+  display: flex;
+  width: auto;
+  padding: 0 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  line-height: 25px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.sobre h1,
+.sobre h3 {
+  color: #6c3959;
+}
+.sobre h1 {
+  font-size: 2.4rem;
+  padding: 8px;
+}
+.sobre h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.sobre-container {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.italico {
+  font-style: italic;
+  font-weight: bolder;
+}
+#sobre-negocio {
+  display: flex;
+  flex-direction: column;
+}
+.negocio-img-p {
+  display: flex;
+  border: 2px solid rgba(0, 0, 0, 0.137);
+  border-radius: 10px;
+  padding-top: 55px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.container-img-p {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+.container-img-p .img-sobre {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.texto-sobre h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.container-img-p .img-sobre img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.container-img-p .texto-sobre {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  max-width: 20em;
+}
+/* ========== FIM SOBRE ================= */
+/* =============== Carrocel de imagens ================== */
+.carrossel{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.carrossel h1{
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 60px;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+#p-instagram-car{
+  font-size: 30px;
+  margin-bottom: 60px;
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+}
+.icon-ir-instagram{
+  color: black;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 30px;
+}
+.link-insta-carrosse{
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0);
+  font-size: 50px;
+  transition: .6s;
+}
+.link-insta-carrosse:hover{
+  color: #fff;
+}
+/* =============== Fim Carroceu de imagens ============== */
+/* ========== FOOTER ==================== */
+.footer {
+  display: flex;
+  min-height: 100px;
+  margin-left: 55px;
+  margin-right: 55px;
+  margin-bottom: 4rem;
+  padding: 20px 20px;
+  background-color: #e6e6e6;
+  font-size: 0.8rem;
+  color: #996887be;
+}
+.footer p {
+  margin: auto;
+}
+.footer p a{
+  text-decoration: none;
+  color: #996887be;
+}
+/* ========== FIM FOOTER================= */
+/* =============== contatos fixed =================== */
+#contatos-mai {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  font-size: 2.2em;
+  height: 4rem;
+  width: 100%;
+  z-index: 12;
+}
+.link-div {
+  text-decoration: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.link-div i {
+  margin-top: 0.5em;
+}
+.insta-mai {
+  background-color: #e1306c;
+}
+.insta-mai:hover {
+  background-color: white;
+  color: #e1306c;
+}
+.youtube-mai {
+  background-color: #c4302b;
+}
+.youtube-mai:hover {
+  background-color: white;
+  color: #c4302b;
+}
+.whatsapp-mai {
+  background-color: #34af23;
+}
+.whatsapp-mai:hover {
+  background: white;
+  color: #34af23;
+}
+/* =============== fim contatos fixed =================== */

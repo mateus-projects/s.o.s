@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Keywords" content=" ">
+<meta name="Description" content="">
+
+    <title>S.O.S Esmalteria</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/owl_carrosselJS/owl.carousel.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <!--estilos-->
+    <link rel="stylesheet" href="css/style-index.css" defer />
+    <link rel="stylesheet" href="css/style-index-responsivo.css" defer />
+    <link rel="stylesheet" href="css/dark-mode.css" defer>
+    <link rel="stylesheet" href="css/owl_carrossel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl_carrossel/owl.theme.default.min.css">
+    <!--font-->
+    <script
+      src="https://kit.fontawesome.com/21fb9e7a91.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER BANNER-->
+    <header>
+      <div class="banner">
+        <div class="logo-adress">
+          <div id="logo">
+            <img src="img/sos_banner_site.png" alt="logo s o s" />
+          </div>
+          <div id="contatos">
+            <ul id="address">
+              <li id="contato">Contatos</li>
+              <li>(51)997301699 <i class="fa-solid fa-phone"></i></li>
+              <li>exemplo@seusite.com <i class="fa-solid fa-envelope"></i></li>
+              <li>
+                <a class="adress-rua" href="https://www.google.com/maps/place/R.+Regis+Bittencourt,+62+-+S%C3%A3o+Luiz,+Sapiranga+-+RS,+93815-016/@-29.6541313,-50.9975105,17z/data=!3m1!4b1!4m5!3m4!1s0x95193f990afaff43:0x11efb4db4ae6dd38!8m2!3d-29.654136!4d-50.9953218" target="_blank" rel="noopener noreferrer">Régis Bittencout 62, São Luiz, Sapiranga/RS</a>
+                <i class="fa-solid fa-location-dot"></i>
+              </li>
+            </ul>
+            <ul id="icons">
+              <li>
+                <a
+                  href="https://instagram.com/maiarasilva.sos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5551997301699"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+            <button aria-label="selecionar-modo" onclick="modoDark()" class="button-dark button-contact">Dark Mode</button>
+          </div>
+        </div>
+        <!--NAVEGAÇÃO-->
+        <div class="navigation-padrao">
+          <nav class="nav-content">
+            <a href="#">Início</a>
+            <a href="navegacao/cardapio.html">Cardápio</a>
+            <a href="#">Cursos</a>
+          </nav>
+        </div>
+        <div id="myNav" class="overlay">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="index.html">Início</a>
+            <a onclick="closeNav()" href="navegacao/cardapio.html">Cardápio</a>
+            <a onclick="closeNav()" href="#">Cursos</a>
+            <button aria-label="selecionar-modo" onclick="modoDark()" class="button-dark">Dark Mode</button>
+          </div>
+        </div>
+        <button class="nav-button" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+        <!--FIM NAVEGAÇÃO-->
+        
+        <!-- SLIDES OWL-->
+        <div class="owl-carousel owl-theme bannerCar">
+          <div class="item">
+            <img src="img/banner1_menor.jpeg" alt="">
+          </div>
+          <div class="item">
+            <img src="img/banner2_menor.jpeg" alt="">
+          </div>
+          <div class="item">
+            <img src="img/banner3_menor.jpeg" alt="">
+          </div>
+        </div>
+        <script>
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+          items:1,
+          loop:true,
+          margin:10,
+          autoplay:true,
+          autoplayTimeout:4000,
+          autoplayHoverPause:true
+        });
+        $('.play').on('click',function(){
+            owl.trigger('play.owl.autoplay',[1000])
+        })
+        $('.stop').on('click',function(){
+            owl.trigger('stop.owl.autoplay')
+        })
+        </script>
+        <!-- FIM SLIDES OWL -->
+      </div>
+    </header>
+    <!--FIM HEADER BANNER-->
+    <!--SOBRE-->
+    <div class="sobre">
+      <div class="sobre-container">
+        <div id="sobre-negocio">
+          <div id="sobre-top">
+            <h1>Sobre a S.O.S</h1>
+            <br />
+            <p>
+              Para nós da S.O.S Esmalteria as unhas estão relacionadas com a
+              autoestima feminina. "Nós, mulheres, gesticulamos muito e, por
+              isso, nossas mãos estão sempre à mostra". Além disso, uma mulher
+              de unha feita demostra autocuidado, higiene e beleza. A S.O.S
+              preza pela qualidade de serviço. Unhas naturais ou alongadas, elas
+              contam com formatos que variam do convencional até o ousado.
+            </p>
+            <p class="italico">Vejamos...</p>
+          </div>
+          <div class="negocio-img-p">
+            <div class="container-img-p">
+              <div class="img-sobre">
+                <img src="img/quadrada_menor.jpeg" alt="unha quadrada" />
+              </div>
+              <div class="texto-sobre">
+                <h3>Quadrada</h3>
+                <p>
+                  O formato quadrado é o tipo de unha mais popular. Clássico,
+                  ele é ideal para mulheres que não gostam muito de ousar. Esse
+                  modelo deixa as laterais e pontas das unhas bem retinhas, por
+                  isso, é ideal para quem tem os dedos mais alongados, pois ele
+                  dá a impressão de que as unhas são menores!
+                </p>
+              </div>
+            </div>
+            <div class="container-img-p">
+              <div class="img-sobre">
+                <img src="img/stiletto_menor.jpeg" alt="unha stiletto" />
+              </div>
+              <div class="texto-sobre">
+                <h3>Stiletto</h3>
+                <p>
+                  A unha stiletto é um formato de unha que tem como
+                  característica a sua curvatura em V, o que faz com que a unha
+                  vá afunilando á medida em que vai chegando nas pontas. Este é
+                  um formato mais ousado ele é ideal para quem gosta de causar!
+                </p>
+              </div>
+            </div>
+            <div class="container-img-p">
+              <div class="img-sobre">
+                <img src="img/bailarina_menor.jpeg" alt="unha bailarina" />
+              </div>
+              <div class="texto-sobre">
+                <h3>Bailarina</h3>
+                <p>
+                  A unha Bailarina é a queridanha entre as fashionistas! O
+                  formato alongado com as pontinhas reta ficou conhecida como a
+                  favorita. Moderna e muito usável, é uma tendência que veio
+                  para ficar!
+                </p>
+              </div>
+            </div>
+            <div class="container-img-p">
+              <div class="img-sobre">
+                <img src="img/almond_menor.jpeg" alt="unha almond" />
+              </div>
+              <div class="texto-sobre">
+                <h3>Almond</h3>
+                <p>
+                  As unhas almond são parecidas com outros tipos de unha já conhecidas, mas possuem suas peculiaridades. 
+                  As unhas almond transitam entre o estilo oval e o estilo stiletto.
+                  São práticas e mais fáceis de cuidar, não quebram e são bastante resistentes!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--FIM SOBRE-->
+    <!--Carrocel de imagens-->
+    <div class="carrossel">
+      <h1 id="h1-Instagram"># INSTAGRAM</h1>
+      <p id="p-instagram-car">nos siga no instagram</p>
+      <i class="fa-solid fa-circle-down icon-ir-instagram"></i>
+      <div id="instafeed" class="owl-carousel owl-theme owl-loaded owl-drag">
+      </div>
+    </div>
+    <script type="text/javascript" src="js/instafeed/instafeed.min.js"></script>
+    <script type="text/javascript">
+      var feed = new Instafeed({
+      accessToken: 'IGQVJVU0pwTFY2WHpmZAjBvXzNhRFh4MlAwVWVQVE5aSmozT1p3Q2tBMUlWNlZAaYjNtRFQ1ZAGw0N3JTTkpVOVloZAzRfZAXM5XzJOS1l1SElUX2dhc0NDX1VJYlhwUm1ZAbkNBUTdDSXQ4b1phZAGd5bktPaQZDZD', limit: 12, template: '<div class="item-img-insta"><a href="{{link}}" target="_blank" rel="noopener noreferrer"><img title="{{caption}}" src="{{image}}" /><i class="fa-brands fa-instagram link-insta-carrosse"></i></a></div>', after: function(){
+        $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          responsiveClass:true,
+          responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:6,
+                nav:false,
+                loop:true
+            }
+          }
+            });
+      }
+      });
+      feed.run();
+    </script>
+    <!--Fim de Carroceu de imagens-->
+
+    <footer class="footer" id="fale-conosco">
+      <p><i class="fa-solid fa-phone"></i> (51)997301699</p>
+      <p>@seusite.com</p>
+      <p>
+        <i class="fa-solid fa-location-dot"></i> <a href="https://www.google.com/maps/place/R.+Regis+Bittencourt,+62+-+S%C3%A3o+Luiz,+Sapiranga+-+RS,+93815-016/@-29.6541313,-50.9975105,17z/data=!3m1!4b1!4m5!3m4!1s0x95193f990afaff43:0x11efb4db4ae6dd38!8m2!3d-29.654136!4d-50.9953218" target="_blank" rel="noopener noreferrer">Rua Régis Bittencout 62, São
+        Luiz, Sapiranga/RS</a>
+      </p>
+    </footer>
+    <!--CONTATOS FIXED-->
+    <div id="contatos-mai">
+      <a
+        class="link-div insta-mai"
+        href="https://instagram.com/maiarasilva.sos/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a
+        class="link-div whatsapp-mai"
+        href="https://api.whatsapp.com/send?phone=5551997301699"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a class="link-div youtube-mai" href="#">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardápio S.O.S</title>
+
+    <script src="../js/script.js" defer></script>
+    <!--estilos-->
+    <link rel="stylesheet" href="../css/style-index.css" defer />
+    <link rel="stylesheet" href="../css/style-index-responsivo.css" defer />
+    <link rel="stylesheet" href="../css/dark-mode.css" defer />
+    <link rel="stylesheet" href="../css/cardapio/cardapio.css" />
+    <!--font-->
+    <script
+      src="https://kit.fontawesome.com/21fb9e7a91.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--HEADER BANNER-->
+    <header>
+      <div class="banner">
+        <div class="logo-adress">
+          <div id="logo">
+            <img src="../img/sos_banner_site.png" alt="logo s o s" />
+          </div>
+          <div id="contatos">
+            <ul id="address">
+              <li id="contato">Contatos</li>
+              <li>(51)997301699 <i class="fa-solid fa-phone"></i></li>
+              <li>exemplo@seusite.com <i class="fa-solid fa-envelope"></i></li>
+              <li>
+                <a
+                  class="adress-rua"
+                  href="https://www.google.com/maps/place/R.+Regis+Bittencourt,+62+-+S%C3%A3o+Luiz,+Sapiranga+-+RS,+93815-016/@-29.6541313,-50.9975105,17z/data=!3m1!4b1!4m5!3m4!1s0x95193f990afaff43:0x11efb4db4ae6dd38!8m2!3d-29.654136!4d-50.9953218"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Régis Bittencout 62, São Luiz, Sapiranga/RS</a
+                >
+                <i class="fa-solid fa-location-dot"></i>
+              </li>
+            </ul>
+            <ul id="icons">
+              <li>
+                <a
+                  href="https://instagram.com/maiarasilva.sos/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=5551997301699"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-whatsapp"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+            <button
+              aria-label="selecionar-modo"
+              onclick="modoDark()"
+              class="button-dark button-contact"
+            >
+              Dark Mode
+            </button>
+          </div>
+        </div>
+        <!--NAVEGAÇÃO-->
+        <div class="navigation-padrao">
+          <nav class="nav-content">
+            <a href="../index.html">Início</a>
+            <a href="./cardapio.html">Cardápio</a>
+            <a href="#">Cursos</a>
+          </nav>
+        </div>
+        <div id="myNav" class="overlay">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a onclick="closeNav()" href="../index.html">Início</a>
+            <a onclick="closeNav()" href="./cardapio.html">Cardápio</a>
+            <a onclick="closeNav()" href="#">Cursos</a>
+            <button
+              aria-label="selecionar-modo"
+              onclick="modoDark()"
+              class="button-dark"
+            >
+              Dark Mode
+            </button>
+          </div>
+        </div>
+        <button class="nav-button" onclick="openNav()">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </button>
+        <!--FIM NAVEGAÇÃO-->
+      </div>
+    </header>
+    <!--FIM HEADER BANNER-->
+
+    <div class="cardapio-container">
+      <div class="cardapio-itens">
+        <div class="faco">
+          <div class="titulo"><h2>Lorem</h2><i class="fa-solid fa-heart"></i></div>
+          <ul class="items">
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+          </ul>
+        </div>
+        <hr>
+        <div class="decoration">
+          <div class="titulo"><h2>impsum</h2><i class="fa-solid fa-heart"></i></div>
+          <ul class="items">
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+            <li><div class="item"><p>Loremipsum dolor.</p><span>R$ 000,00</span></div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="marca-cardapio"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer" id="fale-conosco">
+      <p><i class="fa-solid fa-phone"></i> (51)997301699</p>
+      <p>@seusite.com</p>
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        <a
+          href="https://www.google.com/maps/place/R.+Regis+Bittencourt,+62+-+S%C3%A3o+Luiz,+Sapiranga+-+RS,+93815-016/@-29.6541313,-50.9975105,17z/data=!3m1!4b1!4m5!3m4!1s0x95193f990afaff43:0x11efb4db4ae6dd38!8m2!3d-29.654136!4d-50.9953218"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Rua Régis Bittencout 62, São Luiz, Sapiranga/RS</a
+        >
+      </p>
+    </footer>
+    <!--CONTATOS FIXED-->
+    <div id="contatos-mai">
+      <a
+        class="link-div insta-mai"
+        href="https://instagram.com/maiarasilva.sos/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a
+        class="link-div whatsapp-mai"
+        href="https://api.whatsapp.com/send?phone=5551997301699"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a class="link-div youtube-mai" href="#">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+  </body>
+</html>
