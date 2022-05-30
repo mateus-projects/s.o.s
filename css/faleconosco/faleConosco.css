@@ -44,3 +44,7 @@ iframe{
     margin-left: 2.5%;
     box-shadow: 5px 5px 25px black;
 }
+a{
+    text-decoration: none;
+    color: #02C1CA;
+}
